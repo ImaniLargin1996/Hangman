@@ -1,0 +1,23 @@
+#!python
+
+import random
+
+###############################################
+#PART 4
+#show previously guessed letters, 
+part3 = ['ocean', 'jump', 'computer', 'chair', 'rope']
+selected_word = random.choice(part3)
+letters = list(selected_word)
+#print(letters)
+characters = len(letters)
+#print(characters)
+def printblanks(num):
+	for x in range(num):
+		print('_', end=' ')
+	print()
+printblanks(characters)
+def checkletters(num):
+	if (num > 1):
+		print('Please enter only one letter!')
+	
+tries = 15
